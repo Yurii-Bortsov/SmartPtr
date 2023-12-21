@@ -13,8 +13,10 @@ int main()
     classroom->addStudent(student1);
     classroom->addStudent(student2);
     classroom->addTeacher(teacher);
-
-    classroom->displayClassInfo();
+    
+    std::ostringstream streamBuffer;
+    streamBuffer << classroom->displayClassInfo();
+    std::cout << streamBuffer.str();
 
     return 0;
 }
