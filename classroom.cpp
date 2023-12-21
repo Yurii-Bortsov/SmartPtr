@@ -14,7 +14,7 @@ void Classroom::addTeacher(const std::shared_ptr<Teacher>& teacher)
     this->teacher = teacher;
 }
 
-std::string Classroom::displayClassInfo()
+std::ostringstream Classroom::displayClassInfo()
 {
     std::ostringstream streamBuffer;
     streamBuffer << "Class Info:\n";
@@ -34,5 +34,5 @@ std::string Classroom::displayClassInfo()
             streamBuffer << "\n";
         }
     }
-    return streamBuffer.str();
+    return streamBuffer;
 }
