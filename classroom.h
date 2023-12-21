@@ -25,6 +25,7 @@ class Classroom : public std::enable_shared_from_this<Classroom>
 
         /** 
          * @brief Отображает информацию об аудитории, включая учителя и студентов.
+         * @return Информация об учебном классе в строковом типе.
          */
-        void displayClassInfo();
+        std::string displayClassInfo();
 };
