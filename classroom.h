@@ -1,6 +1,7 @@
 #include <memory>
 #include <vector>
 #include <iostream>
+#include <sstream>
 
 class Student;
 class Teacher;
