@@ -16,7 +16,7 @@ void Classroom::addTeacher(const std::shared_ptr<Teacher>& teacher)
 void Classroom::displayClassInfo()
 {
     std::cout << "Class Info:\n";
-    if (teacher)
+    if (teacher != nullptr)
     {
         std::cout << "\n";
         teacher->displayInfo();
