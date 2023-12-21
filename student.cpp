@@ -13,7 +13,9 @@ void Student::currentClassroom(const std::shared_ptr<Classroom>& classroom)
 
 /** @brief Отображает информацию о студенте.
  */
-void Student::displayInfo()
+std::ostringstream Student::displayInfo()
 {
-    std::cout << "Name: " << name << ", Age: " << age << "\n";
+    std::ostringstream streamBuffer;
+    streamBuffer << "Name: " << name << ", Age: " << age << "\n";
+    return streamBuffer;
 }
