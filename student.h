@@ -21,5 +21,5 @@ public:
     /** 
      * @brief Отображает информацию о студенте.
      */
-    void displayInfo();
+    std::ostringstream displayInfo();
 };
