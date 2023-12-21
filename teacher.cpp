@@ -8,7 +8,9 @@ void Teacher::currentClassroom(const std::shared_ptr<Classroom>& classroom)
     myClassroom = classroom;
 }
 
-void Teacher::displayInfo()
+std::ostringstream Teacher::displayInfo()
 {
-    std::cout << "Teacher: " << name << "\n";
+    std::ostringstream streamBuffer;
+    streamBuffer << "Teacher: " << name << "\n";
+    return streamBuffer;
 }
