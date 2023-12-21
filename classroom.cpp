@@ -1,4 +1,3 @@
-#include <iostream>
 #include "classroom.h"
 #include "student.h"
 #include "teacher.h"
